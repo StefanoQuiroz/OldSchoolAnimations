@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    outline: 1px solid red;
+}
+
+.full-screen{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/nubeRosada.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.full-screen .left-side{
+    height: 100vh;
+    width: 100px;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.full-screen .left-side .logo{
+    font-family: "Inter", sans-serif;
+    top: 5%;
+    font-size: 2rem;
+    position: absolute;
+    color: #fff;
+}
+
+.full-screen .left-side ul{
+    list-style: none;
+    bottom: 5%;
+    position: absolute;
+}
+
+.full-screen .left-side ul li{
+    transform: rotate(270deg);
+    margin-top: 20px;
+}
+
+.full-screen .left-side ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.full-screen .left-side ul a:hover{
+    border-bottom: 1px solid #fff;;
+}
+
+/* main-area */
+.main-area{
+    position: absolute;
+    left: 100px;
+    width: calc(100%-100px); /* para que no sobre un espacio en blanco: el ancho total de la pantalla menos el left side */
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
