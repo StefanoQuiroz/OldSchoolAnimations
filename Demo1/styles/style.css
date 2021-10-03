@@ -59,7 +59,7 @@
 .main-area{
     position: absolute;
     left: 100px;
-    width: calc(100%-100px); /* para que no sobre un espacio en blanco: el ancho total de la pantalla menos el left side */
+    width: calc(100% - 100px); /* para que no sobre un espacio en blanco: el ancho total de la pantalla menos el left side, siempr eseparado po run espacio entre el " - " */
     height: 100vh;
     top: 0;
     display: flex;
@@ -67,3 +67,85 @@
     justify-content: space-between;
 }
 
+nav{
+    margin: 35px 20px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li button{
+    background-color: transparent; 
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;;
+}
+
+/* Center-Area */
+
+.center-area{
+    max-width: 700px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.center-area h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.center-area p{
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 35px 40px;
+}
+
+.footer h1{
+    transform: rotate(270deg);
+    color: #fff;
+}
+
+.footer .sci{
+    display: flex;
+}
+
+.footer .sci div{
+    display: flex;
+    align-items: center;
+    align-items: center;   
+}
+
+.footer .sci div img{
+    width: 120px;   
+}
+
+.footer .sci div .mr-2{
+    margin-right: 2rem;
+}
